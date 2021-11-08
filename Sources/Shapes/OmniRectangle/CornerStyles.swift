@@ -21,12 +21,12 @@ extension OmniRectangle {
             self.bottomRight = bottomRight
         }
         
-        public init(_ corners: UIRectCorner = .allCorners, style: CornerStyle) {
-            self.topLeft     = corners.contains(.topLeft)     ? style : .square
-            self.bottomLeft  = corners.contains(.bottomLeft)  ? style : .square
-            self.topRight    = corners.contains(.topRight)    ? style : .square
-            self.bottomRight = corners.contains(.bottomRight) ? style : .square
-        }
+//         public init(_ corners: UIRectCorner = .allCorners, style: CornerStyle) {
+//             self.topLeft     = corners.contains(.topLeft)     ? style : .square
+//             self.bottomLeft  = corners.contains(.bottomLeft)  ? style : .square
+//             self.topRight    = corners.contains(.topRight)    ? style : .square
+//             self.bottomRight = corners.contains(.bottomRight) ? style : .square
+//         }
         
         public static func allSquare() -> CornerStyles {
             CornerStyles(topLeft: .square,
