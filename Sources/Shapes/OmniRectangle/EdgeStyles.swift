@@ -21,12 +21,12 @@ extension OmniRectangle {
             self.bottomCurvature = bottomCurvature
         }
         
-        public init(_ edges: UIRectEdge = .all, curvature: CGFloat) {
-            self.leftCurvature   = edges.contains(.left)   ? curvature : 0
-            self.topCurvature    = edges.contains(.top)    ? curvature : 0
-            self.rightCurvature  = edges.contains(.right)  ? curvature : 0
-            self.bottomCurvature = edges.contains(.bottom) ? curvature : 0
-        }
+//         public init(_ edges: UIRectEdge = .all, curvature: CGFloat) {
+//             self.leftCurvature   = edges.contains(.left)   ? curvature : 0
+//             self.topCurvature    = edges.contains(.top)    ? curvature : 0
+//             self.rightCurvature  = edges.contains(.right)  ? curvature : 0
+//             self.bottomCurvature = edges.contains(.bottom) ? curvature : 0
+//         }
         
         public static func allFlat() -> EdgeStyles {
             EdgeStyles(leftCurvature: 0,
